@@ -1,8 +1,8 @@
 package ru.netology.service;
 
-import org.testng.annotations.Test;
+import org.junit.Test;
 
-import static org.testng.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class CashbackHackServiceTest {
     CashbackHackService srv = new CashbackHackService();
@@ -16,6 +16,7 @@ public class CashbackHackServiceTest {
         assertEquals(actual, expected);
 
     }
+
     @Test
     public void shouldConsiderWhenZero() {
 
@@ -45,6 +46,7 @@ public class CashbackHackServiceTest {
         assertEquals(actual, expected);
 
     }
+
     @Test
     public void shouldConsiderBoundary() {
 
@@ -75,7 +77,6 @@ public class CashbackHackServiceTest {
         assertEquals(actual, expected);
 
     }
-
 
 
 }
